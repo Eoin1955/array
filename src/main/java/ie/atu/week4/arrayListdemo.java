@@ -1,6 +1,7 @@
 package ie.atu.week4;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class arrayListdemo {
     public static void main(String[] args) {
@@ -20,6 +21,20 @@ public class arrayListdemo {
 
         int index = 0;
         for (int element : Array){ //prints the arraylist
+            System.out.println("The element at index " + index + " : " + element);
+            index++;
+        }
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter a new number:");
+
+        int newNum = sc.nextInt();
+
+        Array.add(newNum);
+
+        index = 0;
+        for (int element : Array){
             System.out.println("The element at index " + index + " : " + element);
             index++;
         }
