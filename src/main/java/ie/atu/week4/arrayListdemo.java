@@ -19,7 +19,7 @@ public class arrayListdemo {
         Array.add(1000);
 
         int index = 0;
-        for (int element : Array){
+        for (int element : Array){ //prints the arraylist
             System.out.println("The element at index " + index + " : " + element);
             index++;
         }
